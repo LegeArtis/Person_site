@@ -1,0 +1,99 @@
+.open_menu {
+  z-index: 5;
+  height: 100%;
+  width: 250px;
+  background-color: #A11414;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.open_menu .exit {
+  width: 20%;
+  max-width: 30px;
+  height: auto;
+  display: block;
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.exit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.open_menu .social {
+  position: absolute;
+  bottom: 5%;
+  height: 50px;
+  width: 250px;
+}
+
+.open_menu .social a {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+
+.open_menu ul {
+  width: 200px;
+  font-family: 'Ubuntu Mono', monospace;
+  padding-left: 30px;
+  list-style-type: none;
+  font-size: 1.5em;
+  position: relative;
+  top: 20%;
+  display: block;
+  color: white;
+}
+
+.open_menu li:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.open_menu li:active {
+
+}
+
+.open_menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.open_menu li {
+  margin-bottom: 40px;
+}
+
+.menu {
+  position: absolute;
+  height: 230px;
+  width: 50px;
+  top: 4%;
+  left: 2%;
+}
+
+.menu button {
+  background: url("../../assets/images/menu/Menu.svg") no-repeat;
+
+}
+
+.menu button:hover {
+  background: url("../../assets/images/menu/menu_hover.svg") no-repeat;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+button {
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}

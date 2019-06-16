@@ -1,0 +1,34 @@
+<div class="menu" (click)="openMenu()">
+  <button ></button>
+</div>
+
+
+<div class="open_menu" id="open_menu" [hidden]="isOpen">
+  <img [src]="exitImg" class="exit" alt="Exit" (click)="exitMenu()">
+  <ul>
+    <li>
+      <a routerLink="/" (click)="exitMenu()">Главная</a>
+    </li>
+    <li>
+      <a routerLink="/portfolio" (click)="exitMenu()">Портфолио</a>
+    </li>
+    <li>
+      <a routerLink="/portfolio" (click)="exitMenu()">Обо мне</a>
+    </li>
+    <li>
+      <a routerLink="/portfolio" (click)="exitMenu()">Как я работаю</a>
+    </li>
+  </ul>
+
+  <div class="social">
+    <a href="https://www.instagram.com/yuliiastepaniuk/?hl=ru" target="_blank">
+      <img [src]="instagramImg" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100017402767839" target="_blank">
+      <img [src]="fbImg" alt="Facebook">
+    </a>
+    <a href="https://vk.com/id116315640" target="_blank">
+      <img [src]="vkImg" alt="VK">
+    </a>
+  </div>
+</div>

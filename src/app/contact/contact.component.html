@@ -1,0 +1,64 @@
+<div class="contact">
+  <button (click)="openContact()"></button>
+</div>
+
+<div class="open_contact" [hidden]="_isOpen">
+  <div class="info">
+    <div class="mail">
+      <p>ПОЧТА</p>
+      <div class="line"></div>
+      <p class="text">yuliiastepaniuk94@gmail.com</p>
+    </div>
+
+    <div class="freelance">
+      <p>ФРИЛАНС-БИРЖА</p>
+      <div class="line"></div>
+      <p class="text">ссылка</p>
+    </div>
+
+
+    <div class="social_block">
+      <p>СОЦ СЕТИ</p>
+      <div class="line"></div>
+      <div class="social_block_button">
+        <a href="https://www.instagram.com/yuliiastepaniuk/?hl=ru" target="_blank">
+          <img src="../../assets/images/contact/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100017402767839" target="_blank">
+          <img src="../../assets/images/contact/fb.svg" alt="Facebook">
+        </a>
+        <a href="https://vk.com/id116315640" target="_blank">
+          <img src="../../assets/images/contact/vk.svg" alt="VK">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="callback">
+    <img class="exit" src="../../assets/images/contact/exit.svg" alt="Exit" (click)="closeContact()">
+
+    <form>
+      <p>свяжитесь со мной</p>
+      <div class="input">
+        <label for="name">имя</label>
+        <input id="name" type="text" name="name">
+      </div>
+      <div class="line"></div>
+
+      <div class="input">
+        <label for="e-mail">e-mail</label>
+        <input type="text" id="e-mail" name="email">
+      </div>
+      <div class="line"></div>
+
+      <div class="input" id="textarea">
+        <label for="text">сообщение</label>
+        <textarea id="text" cols="25" maxlength="150" rows="1"></textarea>
+      </div>
+      <div class="line"></div>
+
+      <input class="submit" type="submit" value="Отправить">
+    </form>
+  </div>
+</div>
