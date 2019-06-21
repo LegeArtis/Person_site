@@ -7,9 +7,9 @@ import {MenuContactHelperService} from '../menu-contact-helper.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  @ViewChild('myForm') formValues;
-  private isOpen = true;
-  private isSend = true;
+  @ViewChild('myForm', { read: false}) formValues: any;
+  private _isOpen = true;
+  private _isSend = true;
   private all = true;
 
   public closeContact(value?: number) {
@@ -78,4 +78,20 @@ export class ContactComponent implements OnInit {
     this.closeContact(0.025);
   }
 
+
+  get isOpen(): boolean {
+    return this._isOpen;
+  }
+
+  set isOpen(value: boolean) {
+    this._isOpen = value;
+  }
+
+  get isSend(): boolean {
+    return this._isSend;
+  }
+
+  set isSend(value: boolean) {
+    this._isSend = value;
+  }
 }
