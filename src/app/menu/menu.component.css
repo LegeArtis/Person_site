@@ -25,6 +25,7 @@
 }
 
 .open_menu .social {
+  overflow: hidden;
   position: absolute;
   bottom: 5%;
   height: 50px;
@@ -43,12 +44,13 @@ a:hover {
 
 
 .open_menu ul {
+  overflow: hidden;
   width: 200px;
   font-family: 'Ubuntu Mono', monospace;
   padding-left: 30px;
   list-style-type: none;
   font-size: 1.5em;
-  position: relative;
+  position: absolute;
   top: 20%;
   display: block;
   color: white;
@@ -57,10 +59,6 @@ a:hover {
 .open_menu li:hover {
   cursor: pointer;
   font-size: 1.1em;
-}
-
-.open_menu li:active {
-
 }
 
 .open_menu li a {
@@ -74,26 +72,27 @@ a:hover {
 
 .menu {
   position: absolute;
-  height: 230px;
-  width: 50px;
-  top: 4%;
+  height: 40px;
+  width: 40px;
+  top: 25px;
   left: 2%;
 }
 
 .menu button {
-  background: url("../../assets/images/menu/Menu.svg") no-repeat;
-
+  background: url("../../assets/images/menu/menu_button.svg") no-repeat;
+  outline: none;
+  height: 60px;
+  width: 60px;
+  border: 0;
+  padding: 0;
 }
 
 .menu button:hover {
-  background: url("../../assets/images/menu/menu_hover.svg") no-repeat;
+  background: url("../../assets/images/menu/menu_button_active.svg") no-repeat;
   cursor: pointer;
   transform: scale(1.2);
 }
 
 button {
-  outline: none;
-  height: 100%;
-  width: 100%;
-  border: 0;
+
 }

@@ -1,8 +1,8 @@
-<div class="contact">
-  <button (click)="openContact()"></button>
+<div class="contact" (click)="openContact()">
 </div>
 
-<div class="open_contact" [hidden]="_isOpen">
+
+<div class="open_contact" id="contact" [hidden]="isOpen">
   <div class="info">
     <div class="mail">
       <p>ПОЧТА</p>
@@ -38,27 +38,33 @@
   <div class="callback">
     <img class="exit" src="../../assets/images/contact/exit.svg" alt="Exit" (click)="closeContact()">
 
-    <form>
+    <form #myForm="ngForm" target="_parent" (ngSubmit)="sendMail(name.value, email.value, message.value)">
       <p>свяжитесь со мной</p>
       <div class="input">
         <label for="name">имя</label>
-        <input id="name" type="text" name="name">
+        <input id="name" type="text" name="name" required="required" #name>
       </div>
       <div class="line"></div>
 
       <div class="input">
         <label for="e-mail">e-mail</label>
-        <input type="text" id="e-mail" name="email">
+        <input type="text" id="e-mail" name="email" required="required" #email>
       </div>
       <div class="line"></div>
 
       <div class="input" id="textarea">
         <label for="text">сообщение</label>
-        <textarea id="text" cols="25" maxlength="150" rows="1"></textarea>
+        <textarea id="text" cols="25" maxlength="150" rows="1" required="required" #message></textarea>
       </div>
       <div class="line"></div>
 
-      <input class="submit" type="submit" value="Отправить">
+      <input class="submit" type="submit" value="Отправить" >
     </form>
+
+    <div class="is_send" [hidden]="isSend">
+      <img src="../../assets/images/contact/check.svg" alt="check">
+      <p>Ваше сообщение отправлено.</p>
+      <p>Спасибо за обращение.</p>
+    </div>
   </div>
 </div>

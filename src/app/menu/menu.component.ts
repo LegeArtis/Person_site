@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  private exitImg = '../assets/images/Exit.svg';
-  private fbImg = '../assets/images/FB.svg';
-  private vkImg = '../assets/images/VK.svg';
-  private instagramImg = '../assets/images/Inst.svg';
+  private _exitImg = '../assets/images/menu/Exit.svg';
+  private _fbImg = '../assets/images/menu/FB.svg';
+  private _vkImg = '../assets/images/menu/VK.svg';
+  private _instagramImg = '../assets/images/menu/Inst.svg';
   private _isOpen = true;
 
 
@@ -46,6 +46,9 @@ export class MenuComponent implements OnInit {
     }, 20);
   }
 
+  ngOnInit(): void {
+  }
+
 
   get isOpen(): boolean {
     return this._isOpen;
@@ -55,6 +58,19 @@ export class MenuComponent implements OnInit {
     this._isOpen = value;
   }
 
-  ngOnInit(): void {
+  get exitImg(): string {
+    return this._exitImg;
+  }
+
+  get fbImg(): string {
+    return this._fbImg;
+  }
+
+  get vkImg(): string {
+    return this._vkImg;
+  }
+
+  get instagramImg(): string {
+    return this._instagramImg;
   }
 }

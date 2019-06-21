@@ -1,4 +1,35 @@
 
+
+.is_send {
+  z-index: 12;
+  width: 70%;
+  height: 25%;
+  background: #A11414;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 10px;
+
+}
+
+.is_send p {
+  position: relative;
+  font-family: 'Ubuntu Mono', serif;
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+
+.is_send img {
+  margin-top: 5%;
+  width: 80px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 form {
   position: absolute;
   width: 70%;
@@ -92,33 +123,31 @@ form .line{
 .contact {
   position: absolute;
   right: 2%;
-  top: 4%;
-  height: 230px;
-  width: 65px;
+  top: 25px;
+  height: 50px;
+  width: 50px;
+  background: url("../../assets/images/contact/contact_button.svg") no-repeat;
 }
 
-.contact button {
-  background: url("../../assets/images/contact/Contact.svg") no-repeat;
-}
-
-.contact button:hover {
-  background:  url("../../assets/images/contact/contact_hover.svg") no-repeat;
+.contact:hover {
+  background:  url("../../assets/images/contact/contact_button_hover.svg") no-repeat;
   cursor: pointer;
   transform: scale(1.2);
 }
 
-button {
-  outline: none;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
-
 .open_contact {
+  overflow: hidden;
   z-index: 10;
   position: absolute;
-  width: 50%;
   height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.test {
+  position: absolute;
+  height: 100%;
+  width: 50%;
   min-width: 800px;
   right: 0;
   top: 0;
@@ -135,7 +164,7 @@ button {
   width: 45%;
   height: 65%;
   background-color: #E2E2E2;
-  box-shadow: 0 5px 5px 0 #3C3838;
+  /*box-shadow: 0 5px 5px 0 #3C3838;*/
 }
 
 .callback {
@@ -153,6 +182,7 @@ button {
   bottom: 0;
   width: 100%;
   height: 30%;
+  overflow: hidden;
 }
 
 .line {

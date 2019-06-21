@@ -1,19 +1,15 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuContactHelperService {
-  private menuHidden = true;
+  private url = 'http://localhost:3000/';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-
-  setMenuHidden(value: boolean) {
-    this.menuHidden = value;
-  }
-
-  get isMenuHidden(): boolean {
-    return this.menuHidden;
+  sendMail(mail) {
+    this.http.post(`${this.url}send-email`, mail).subscribe( res => console.log('Mail was send'));
   }
 }
