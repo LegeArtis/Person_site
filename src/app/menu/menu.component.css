@@ -28,13 +28,13 @@
   overflow: hidden;
   position: absolute;
   bottom: 5%;
-  height: 50px;
+  height: 70px;
   width: 250px;
 }
 
 .open_menu .social a {
   display: inline-block;
-  margin-left: 25px;
+  margin: 10px 0 0 25px;
 }
 
 a:hover {

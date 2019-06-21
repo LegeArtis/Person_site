@@ -38,20 +38,14 @@ form {
   right: 10%;
   background: #E2E2E2;
 }
-label {
-  font-family: 'Ubuntu Mono', serif;
-  font-size: 1.4em;
-  left: 10%;
-  position: relative;
-}
 
 input {
+  text-align: center;
   outline: none;
   font-family: "Ubuntu Mono", serif;
   position: relative;
-  float: right;
-  right: 0;
-  width: 65%;
+  left: 10px;
+  width: 330px;
   font-size: 1.4em;
   border: none;
   background: #E2E2E2;
@@ -63,15 +57,15 @@ input:-webkit-autofill {
 
 
 textarea {
+  text-align: center;
   display: inline-block;
   outline: none;
   font-family: "Ubuntu Mono", serif;
   position: relative;
   box-sizing: border-box;
-  left: 15%;
+  left: 5px;
   height: auto;
-  min-width: 57%;
-  max-width: 57%;
+  width: 330px;
   font-size: 1.4em;
   border: none;
   background: #E2E2E2;
@@ -94,24 +88,26 @@ textarea {
 }
 
 .submit:hover {
+  cursor: pointer;
   background: #A11414;
 }
 
 .input {
-  margin-top: 25%;
+  padding-left: 30px;
+  width: 60%;
+  margin-top: 15%;
   margin-bottom: 5px;
 }
 form .line{
   left: 55%;
   width: 90%;
-  margin-bottom: 20%;
 }
 
 .exit {
   position: absolute;
   right: 5%;
   top: 2%;
-  width: 40px;
+  width: 30px;
   height: auto;
 }
 
@@ -164,7 +160,6 @@ form .line{
   width: 45%;
   height: 65%;
   background-color: #E2E2E2;
-  /*box-shadow: 0 5px 5px 0 #3C3838;*/
 }
 
 .callback {
@@ -182,7 +177,12 @@ form .line{
   bottom: 0;
   width: 100%;
   height: 30%;
+  min-height: 140px;
   overflow: hidden;
+}
+
+.social_block_button img:hover{
+  transform: scale(1.2);
 }
 
 .line {
@@ -198,13 +198,13 @@ form .line{
   font-weight: bold;
   text-align: center;
   font-family: 'Amatic SC', serif;
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
 }
 
 .social_block_button {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   height: 60px;

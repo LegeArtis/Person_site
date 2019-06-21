@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   public closeContact(value?: number) {
     let inter,
     count = 1;
-    const timeout = value || 0.1;
+    const timeout = value || 0.2;
 
     inter = setInterval(() => {
       if (count <= 0) {
@@ -54,7 +54,7 @@ export class ContactComponent implements OnInit {
         document.getElementById('contact').style.width = count + units;
         count += 0.05 * maxCount;
       }
-    }, 20);
+    }, 14);
 
     this.isOpen = false;
   }

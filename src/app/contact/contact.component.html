@@ -41,20 +41,18 @@
     <form #myForm="ngForm" target="_parent" (ngSubmit)="sendMail(name.value, email.value, message.value)">
       <p>свяжитесь со мной</p>
       <div class="input">
-        <label for="name">имя</label>
-        <input id="name" type="text" name="name" required="required" #name>
+        <input id="name" type="text" placeholder="имя" required="required" #name>
       </div>
       <div class="line"></div>
 
       <div class="input">
-        <label for="e-mail">e-mail</label>
-        <input type="text" id="e-mail" name="email" required="required" #email>
+        <input type="text" id="e-mail" placeholder="e-mail" required="required" #email>
       </div>
       <div class="line"></div>
 
       <div class="input" id="textarea">
-        <label for="text">сообщение</label>
-        <textarea id="text" cols="25" maxlength="150" rows="1" required="required" #message></textarea>
+        <label for="text"></label>
+        <textarea id="text" placeholder="сообщение" cols="30" maxlength="170" rows="1" required="required" #message></textarea>
       </div>
       <div class="line"></div>
 

@@ -26,9 +26,9 @@ export class MenuComponent implements OnInit {
         document.getElementById('open_menu').style.opacity = `1`;
       } else {
         document.getElementById('open_menu').style.opacity = `${count}`;
-        count -= 0.2;
+        count -= 0.1;
       }
-    }, 100);
+    }, 14);
   }
 
   public openMenu() {
@@ -43,7 +43,7 @@ export class MenuComponent implements OnInit {
         document.getElementById('open_menu').style.width = `${count}px`;
         count += 10;
       }
-    }, 20);
+    }, 14);
   }
 
   ngOnInit(): void {

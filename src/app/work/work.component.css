@@ -4,7 +4,11 @@
 }
 
 .white_block p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.empty {
+  height: 50px;
 }
 
 .white_block {
@@ -28,7 +32,7 @@
   font-size: 1.5em;
   background-color: #A11414;
   right: 65%;
-  top: 70%;
+  top: 600px;
   font-weight: bold;
   display: inline-block;
   overflow: hidden;
@@ -121,7 +125,7 @@
 
 .right {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 40%;
   width: 60%;
   height: auto;
@@ -138,9 +142,11 @@
   margin: 0;
 }
 
+
+
 .photo {
   width: 30%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   position: absolute;
   left: 5%;
@@ -157,6 +163,7 @@
   height: auto;
   width: auto;
   overflow: hidden;
+  margin-bottom: 70px;
 }
 
 .title img {
