@@ -134,7 +134,7 @@ form .line{
 .open_contact {
   overflow: hidden;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   height: 100%;
   right: 0;
   top: 0;

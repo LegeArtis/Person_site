@@ -3,7 +3,7 @@
   height: 100%;
   width: 250px;
   background-color: #A11414;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
